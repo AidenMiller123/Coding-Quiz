@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Document</title>
+</head>
+<nav>
+<button id="highscoresBtn">View Highscores</button>
+<div class="timer">Time: </div>
+</nav>
+
+
+<body>
+<div class="start-page">
+    <h1>Coding Quiz Challenge</h1>
+    <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score time by 10 seconds!</p>
+    <button id="start-button">Start</button>
+</div>
+
+
+<div class="finished" style="display: none;">
+    <h1>All Done!</h1>
+    <p>Your final scores:</p>
+    <label>Enter your initals: </label><input class="initals"><button id="submitInitals">Submit</button>
+</div>
+
+
+
+<div class="highscores" style="display: none;">
+    <h1>Highscores</h1>
+    <button id="goBackBtn">Go Back</button>
+    <button id="clearHighscores">Clear Highscores</button>
+</div>
+
+</body>
+
+
+
+<script src="./assets/index.js"></script>
+</html>

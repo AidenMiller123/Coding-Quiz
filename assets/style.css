@@ -1,36 +1,36 @@
+/* styles and positions timer in the nav bar */
 .timer {
     float: right;
 }
-
+/* styles highscore button in the nav bar */
 #highscoresBtn {
     background-color: white;
     color: blue;
     border: none;
 }
-
-
+/* styles and positions the start page content */
 .start-page {
     text-align: center;
     padding-top: 40px;
 }
-
+/* styles the text in the start page div */
 .start-page p{
     font-size: large;
 }
-
+/* styles the start button */
 #start-button {
     background-color: blueviolet;
     color: white;
     width: 5%;
 }
-
+/* styles the questions that appear */
 #question {
     padding-top: 40px;
     font-size: 25px;
     font-weight: bold;
     text-align: left;
 }
-
+/*  styles the options that appear*/
 #options {
     display: flex;
     flex-direction: column;
@@ -38,46 +38,49 @@
     gap: 20px 10px;
     padding-top: 100px;
 }
-
-#optionBtn {
-background-color: blueviolet;
-color: white;
-align-items: center;
-font-size: 20px;
-border-radius: 8px;
+/*styles the options buttons   */
+.optionBtn {
+    background-color: blueviolet;
+    color: white;
+    align-items: center;
+    font-size: 20px;
+    border-radius: 8px;
 }
-
- #questionArea {
-     display: flex;
-     flex-direction: column;
+.optionBtn:hover {
+    color: blueviolet; /* Green */
+    background-color: white;
+    transition: 0.7s;
+  }
+/* positions the questions and answers  */
+#questionArea {
+    display: flex;
+    flex-direction: column;
     align-items:flex-start;
     margin-left: 500px;
- }
-
+}
+/*  styles and positions answer status at the end of every question */
 #answerStatus {
     margin-top: 25px;
     padding-top: 15px;
     font-family: sans-serif cursive;
     border-top: solid rgba(150, 148, 148, 0.623);
     color: rgba(150, 148, 148, 0.623);
-    
-    
 }
-
+/* positions the finished page display */
 #finished {
     display: flex;
     flex-direction: column;
     margin-left: 600px;
     margin-top: 100px;
 }
-
+/* positions the highscores page display */
 #highscores {
     display: flex;
     flex-direction: column;
     margin-left: 600px;
     margin-top: 100px;
 }
-
+/* styles the go back button in highscores page */
 #goBackBtn {
     background-color: blueviolet;
     color: white;
@@ -85,11 +88,24 @@ border-radius: 8px;
     border-radius: 8px;
     font-size: 16px;
 }
-
+/*  styles clear highscores button in highscores page*/
 #clearHighscores {
     background-color: blueviolet;
     color: white;
     align-items: center;
     border-radius: 8px;
     font-size: 16px;
+    margin-left: 35px;
+}
+
+#highscoreList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px 10px;
+    width: 50%;
+    
+}
+
+.highscoreInd {
+    background-color: thistle;
 }

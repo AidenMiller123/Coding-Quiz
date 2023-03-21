@@ -9,28 +9,41 @@
 </head>
 <nav>
 <button id="highscoresBtn">View Highscores</button>
-<div class="timer">Time: </div>
+<div class="timer">Time: <span class="timerText">0</span></div>
+
 </nav>
 
 
 <body>
-<div class="start-page">
+<div class="start-page" style="display: block;" id="startPage">
     <h1>Coding Quiz Challenge</h1>
-    <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score time by 10 seconds!</p>
-    <button id="start-button">Start</button>
+    <p>Try to answer the following code-related questions within the time <br> limit. Keep in mind that incorrect answers will penalize your score time <br> by 10 seconds!</p>
+    <button id="start-button" >Start Quiz</button>
+</div>
+
+<div id="questionArea">
+    <div id="question"></div>
+    <div id="options"></div>
+    <div id="answerStatus"></div>
 </div>
 
 
-<div class="finished" style="display: none;">
+
+<div id="finished"  style="display: none;">
     <h1>All Done!</h1>
-    <p>Your final scores:</p>
-    <label>Enter your initals: </label><input class="initals"><button id="submitInitals">Submit</button>
+    <p>Your final scores: <span id="runningScore"></span></p>
+    <label>Enter your initals: </label><input type="text" id="initals"><button id="submitInitals">Submit</button>
 </div>
 
 
 
-<div class="highscores" style="display: none;">
+<div id="highscores" style="display: none;">
     <h1>Highscores</h1>
+    <div id="highscoresDisplay">
+        <ul id="highscoreList">
+
+        </ul>
+    </div>
     <button id="goBackBtn">Go Back</button>
     <button id="clearHighscores">Clear Highscores</button>
 </div>
